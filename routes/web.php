@@ -41,6 +41,7 @@ Route::get('/', [FrontendController::class, 'index'])->name('home');
 Route::get('/blog/{blog:slug}', [BlogController::class, 'show']);
 Route::get('/about', [FrontendController::class, 'about'])->name('about');
 Route::get('/battery', [FrontendController::class, 'battery'])->name('battery');
+Route::get('/battery-detail', [FrontendController::class, 'batteryDetail'])->name('battery-detail');
 Route::get('/solar', [FrontendController::class, 'solar'])->name('solar');
 Route::get('/product/{product:slug}', [ProductController::class, 'show']);
 Route::get('/gallery', [FrontendController::class, 'gallery'])->name('gallery');
